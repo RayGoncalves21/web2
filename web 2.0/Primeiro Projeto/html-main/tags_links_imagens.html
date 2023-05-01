@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .img-in-txt {
+            width: 250px;
+            height: 390px;
+        }
+
+        .roupas-femininas {
+            width: 190px;
+            height: 250px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#">Página inicial</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+
+    </nav>
+    <h1 style="background-color:red;">Cabeçalho</h1>
+    <p>Lorem Ipsum is simply dummy text <br> H<sub>2</sub>o H<sup>2</sup>O <br>of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer <i>took a galley of type</i> and scrambled it to make a type specimen book.
+        It has survived <u>not only five centuries</u>, but also the leap <small>into electronic typesetting</small>,
+        remaining essentially unchanged. <strong>It was popularised in the 1960s</strong> with the release of Letraset
+        sheets containing Lorem Ipsum passages.
+    </p>
+    <hr>
+    <a href="https://www.lipsum.com/" target="_blank">, and more recently with desktop publishing software like
+        Aldus PageMaker including versions of Lorem Ipsum.</a>
+    <br>
+    <img class="img-in-txt" src="https://logodownload.org/wp-content/uploads/2016/09/milan-logo-1.png" alt="logo Milan">
+    <hr>
+    <br>
+    <header>
+        <h1>
+            <a href="#">HOME</a>
+        </h1>
+
+
+    </header>
+    <p><b>Milan</b> <br> H<sub>2</sub>o H<sup>2</sup>O <br>of the printing and typesetting
+        industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer <i>took a galley of type</i> and scrambled it to make a type specimen book.
+        It has survived <u>not only five centuries</u>, but also the leap <small>into electronic typesetting</small>,
+        remaining essentially unchanged. <strong>It was popularised in the 1960s</strong> with the release of Letraset
+        sheets containing Lorem Ipsum passages.
+    </p>
+    <br>
+    <blockquote cite="https://www.lipsum.com/"><b>isso é um bloco de citação</b> <br>It is a long established fact that
+        a
+        reader will
+        be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is
+        that it has
+        a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look
+        like readable
+        English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
+        and a search
+        for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the
+        years, sometimes
+        by accident, sometimes on purpose (injected humour and the like).
+    </blockquote>
+    <pre>
+        <code>
+            <b>Codigo python: </b>
+            <br>
+            class Banca(models.Model):
+
+            nome_banca = models.CharField(
+                verbose_name='Nome da Banca: ',
+                max_length=100,
+            )
+        
+            valor_inicial_banca = models.IntegerField(
+                verbose_name='Valor inicial da banca',
+            )
+        
+            data_inicio_banca = models.DateTimeField(
+                verbose_name='Data inicio banca',
+                auto_now_add=True,
+            )
+        
+            class Meta:
+                verbose_name = "Banca"
+                verbose_name_plural = "Bancas"
+                db_table = "banca"
+        
+            def __str__(self):
+                return self.nome_banca</code>
+    </pre>
+
+
+    <ol>
+        <li>primeiro item</li>
+        <li>segundo item</li>
+        <li>terceiro item</li>
+    </ol>
+
+    <section>
+        <header>
+            <img class="roupas-femininas" src="https://http2.mlstatic.com/D_NQ_NP_789407-MLB45412508219_042021-O.jpg"
+                alt="foto roupa feminina">
+            <h1>Roupas Femininas</h1>
+            <p>Todas as modas do verão</p>
+        </header>
+    </section>
+    <section>
+        <header>
+            <img class="roupas-femininas"
+                src="https://t-static.dafiti.com.br/QwU86IvdJE5c9Oe5a2e4x_NfpkU=/fit-in/427x620/static.dafiti.com.br/p/ks-casual-%2526-sport-cal%25c3%25a7a-jeans-delav%25c3%25aa-masculino-azul-claro-iii-2706-10610701-1-product.jpg"
+                alt="foto roupa masculina">
+            <h1>Roupas Masculinas</h1>
+            <p>Todas as modas do verão</p>
+        </header>
+    </section>
+
+    <menu>
+        <li><button onclick="copy()">Copy</button></li>
+        <li><button onclick="cut()">Cut</button></li>
+        <li><button onclick="paste()">Paste</button></li>
+    </menu>
+
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="#">opção 1</a></li>
+                <li><a href="#">opção 2</a></li>
+                <li><a href="#">opção 3</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <div style="width: 520px;height: 120px; background: red;"></div>
+    <div style="width: 520px;height: 120px; background: yellow;"></div>
+    <div style="width: 520px;height: 120px; background: green;"></div>
+
+    <footer>
+        <b>Copyright @ Bwins</b>
+    </footer>
+</body>
+
+</html>
